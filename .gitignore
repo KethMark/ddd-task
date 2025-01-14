@@ -1,0 +1,6 @@
+.env
+.nexus
+node_modules
+Factory.txt
+mapper.txt
+repository.txt
