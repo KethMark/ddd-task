@@ -1,7 +1,7 @@
 import { Fruits } from "../adapter/dto/fruitDTO";
 
 export class FruitMapper {
-  static toDomain(dbObject: any): Fruits {
+  static toDomain(dbObject: Fruits): Fruits {
     return {
       name: dbObject.name,
       description: dbObject.description,
@@ -11,7 +11,7 @@ export class FruitMapper {
     };
   }
 
-  static toDatabase(domainObject: Fruits): any {
+  static toDatabase(domainObject: Fruits): Fruits {
     return {
       name: domainObject.name,
       description: domainObject.description,
